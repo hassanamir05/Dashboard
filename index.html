@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Boxicons CSS -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+
+    <!--CSS file link-->
+    <link id="theme-style" rel="stylesheet" href="light.css" />
+
+    <!--Font Awesome Link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <!--jQuery Link-->
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <button class="default-position expand">
+        <i class="fa fa-angle-left"></i>
+       </button>
+    <nav class="side-bar mobile-width">
+        <div class="user-info">
+            <img src="/Todo Website/Images/Security.png" />
+            <h1 class="name">Hassan</h1>
+        </div>
+        <div class="search box-around search-box-around" id="search">
+            <a href="#">
+                <i class="bx bx-search-alt hovered-text"></i>
+                <h1 class="icon-content">Search</h1>
+                <div class="search-bar-container">
+                    <input type="text" placeholder="Search...">
+                    <button type="submit">Search</button>
+                    <h2>Searching</h2>
+                </div>
+            </a>
+        </div>
+        <div class="add box-around">
+            <a href="#">
+                <i class="bx bx-plus hovered-text"></i>
+                <h1 class="icon-content">Add</h1>
+            </a>
+        </div>
+        <div class="note box-around">
+            <a href="#">
+                <i class="bx bx-note hovered-text"></i>
+                <h1 class="icon-content">Note</h1>
+            </a>
+        </div>
+        <div class="task box-around">
+            <a href="#">
+                <i class="bx bx-task hovered-text"></i>
+                <h1 class="icon-content">Task</h1>
+            </a>
+        </div>
+        <div class="todo box-around">
+            <a href="#">
+                <i class="bx bx-list-ul hovered-text"> </i>
+                <h1 class="icon-content">Todo List</h1>
+            </a>
+        </div>
+        <div class="calendar box-around">
+            <a href="#">
+                <i class="bx bx-calendar hovered-text"></i>
+                <h1 class="icon-content">Calendar</h1>
+            </a>
+        </div>
+        <div class="trash box-around">
+            <a href="#">
+                <i class="bx bxs-trash hovered-text"></i>
+                <h1 class="icon-content">Trash</h1>
+            </a>
+        </div>
+        <div class="setting box-around" style="margin-top: 50px">
+            <a href="#">
+                <i class="bx bxs-cog hovered-text"></i>
+                <h1 class="icon-content">Setting</h1>
+            </a>
+        </div>
+        <div class="theme box-around" id="theme-toggle">
+            <a href="#">
+                <i class="bx bxs-sun hovered-text"></i>
+                <h1 class="icon-content">Theme</h1>
+            </a>
+        </div>
+        <div class="logout box-around">
+            <a href="#"></a>
+            <i class="bx bx-log-out hovered-text"></i>
+            <h1 class="icon-content">Logout</h1>
+            </a>
+        </div>
+    </nav>
+
+
+    <!--Main Content-->
+    <div class="main-section default-main-section">
+
+        <div class="sticky-notes contents-container special">
+            <div class="heading heading-sticky-notes">
+                <h1>Sticky Notes</h1>
+                <div class="buttons"><button class="btn add-btn"><a href="#"><i class="fas fa-pencil"></i></a></button>
+                    <button class="btn delete-btn"><a href="#"><i class="fas fa-trash"></i></a></button>
+                </div>
+                <form action="">
+                    <button type="submit" class="btn save-btn"><a href="#"><i class="fa-regular fa-floppy-disk"></i></a></button>
+                    <textarea id="sticky-note-text-area" class="size-expanded">Start Writing....</textarea>
+                </form>
+            </div>
+            <hr>
+        </div>
+
+        <div class="contents-container todo-list-container special">
+            <div class="heading heading-todo-list">
+                <h1>Todo List</h1>
+                <div class="buttons"><button class="btn add-btn"><a href="#"><i class="fas fa-pencil"></i></a></button>
+                    <button class="btn delete-btn"><a href="#"><i class="fas fa-trash"></i></a></button>
+                </div>
+            </div>
+            <hr>
+            <ul>
+                <li>Task 1</li>
+                <li>Task 2</li>
+                <li>Task 3</li>
+                <li>Task 4</li>
+                <li>Task 5</li>
+            </ul>
+        </div>
+
+        <div class="contents-container calendar-container">
+            <div class="calendar-container">
+                <div class="calendar-header">
+                    <div class="month" style="text-align: left;">December 2023</div>
+                    <button class="btn add-btn"><a href="#"><i class="fas fa-pencil"></i></a></button>
+                    <button class="btn delete-btn"><a href="#"><i class="fas fa-trash"></i></a></button>
+                    <hr style="margin-top: -17px; margin-bottom:0;">
+                    <div class="weekdays" style="margin-bottom: -10px;">
+                        <div class="weekday">Sun</div>
+                        <div class="weekday">Mon</div>
+                        <div class="weekday">Tue</div>
+                        <div class="weekday">Wed</div>
+                        <div class="weekday">Thu</div>
+                        <div class="weekday">Fri</div>
+                        <div class="weekday">Sat</div>
+                    </div>
+                </div>
+                <div class="calendar-dates" id="calendar-dates">
+                </div>
+            </div>
+        </div>
+        <div class="contents-container notes-container special">
+            <div class="heading heading-notes">
+                <h1>Notes</h1>
+                <div class="buttons"><button class="btn add-btn"><a href="#"><i class="fas fa-pencil"></i></a></button>
+                    <button class="btn delete-btn"><a href="#"><i class="fas fa-trash"></i></a></button>
+                </div>
+            </div>
+            <hr>
+            <div class="new-notes">
+                <div class="new-note">
+                    <h1>Encapsulation</h1>
+                </div>
+                <div class="new-note">
+                    <h1>Inheritance</h1>
+                </div>
+                <div class="new-note">
+                    <h1>Polymorphism</h1>
+                </div>
+                <div class="new-note" id="last-note-always-displaying-at-last"><button><a href="#"><i class="fas fa-plus"></i></a></button></div>
+            </div>
+        </div>
+        <div class="contents-container trash-bin">
+            <button class="trash-bin-button"><a href="#"><i class="fas fa-trash"></i></a></button>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(() => {
+            $("#theme-toggle").click(() => {
+                $("body").toggleClass("dark");
+                if ($("body").hasClass("dark")) {
+                    $("#theme-style").attr("href", "dark.css");
+                } else {
+                    $("#theme-style").attr("href", "light.css");
+                }
+            });
+        });
+        let toggleSearchBarContainer = () => {
+            const searchBarContainer = document.querySelector('.search-bar-container');
+            searchBarContainer.classList.toggle('content-visible');
+        };
+        document.querySelector('#search').addEventListener('click', () => {
+            toggleSearchBarContainer();
+        });
+    </script>
+    <script src="dashboard.js"></script>
+</body>
+
+</html>

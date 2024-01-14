@@ -1,0 +1,769 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+body {
+    font-family: Poppins;
+    margin: 0;
+    padding: 0;
+    height: 98vh;
+    background-color: #000;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.side-bar {
+    width: 150px;
+    height: 95vh;
+    background-color: #262626;
+    transition: 1s ease;
+    padding: 5px 20px 0px 10px;
+    margin: 0;
+    z-index: 1;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.search-bar-container.content-visible {
+    display: block;
+}
+
+.search-bar-container {
+    width: 280px;
+    z-index: 1;
+    border-radius: 10px;
+    position: relative;
+    bottom: 80px;
+    left: 150px;
+    padding: 10px 5px;
+    background-color: rgba(61, 61, 61);
+    padding-bottom: 30px;
+    box-shadow: 3px 3px 2px #000;
+    z-index: 2;
+    display: none;
+}
+
+.search-bar-container input {
+    height: 25px;
+    font-size: 16px;
+    background-color: transparent;
+    color: #000;
+    padding: 5px;
+    width: 190px;
+    border-radius: 7px;
+    border: none;
+    outline: 1px solid #000;
+    color: #fff;
+}
+
+.search-bar-container button {
+    border-radius: 6px;
+    height: 37px;
+    width: 70px;
+    background-color: #034889;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+}
+
+.search-bar-container button:hover {
+    cursor: pointer;
+    box-shadow: 3px 3px 2px #000;
+}
+
+.search-bar-container h2 {
+    font-size: 15px;
+    margin: 10px;
+    width: 180px;
+    color: #fff;
+}
+
+.search-bar-container :hover {
+    box-sizing: 3px 3px 2px #000;
+}
+
+
+/*Buttons*/
+
+
+/*-----------------------------------------------------------------------------------------------------------------------*/
+
+.btn {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: none;
+    color: #fff;
+    margin-left: 5px;
+}
+
+.btn a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    position: relative;
+    top: 5px;
+}
+
+.delete-btn {
+    background-color: red;
+}
+
+.add-btn {
+    background-color: #034889;
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 3px 3px 2px #000;
+}
+
+.save-btn {
+    height: 30px;
+    width: 30px;
+    background-color: rgb(159, 234, 30);
+    position: relative;
+    bottom: 250px;
+    left: 140px;
+    padding: 5px;
+}
+
+.save-btn a {
+    font-size: 18px;
+    position: relative;
+    top: 0px;
+}
+
+.heading {
+    height: 40px;
+}
+
+.heading-todo-list .buttons {
+    position: relative;
+    bottom: 30px;
+    left: 180px;
+}
+
+.heading-sticky-notes .buttons {
+    position: relative;
+    bottom: 30px;
+    left: 180px;
+}
+
+.text-container {
+    height: 210px;
+    border-radius: 12px;
+    color: #fff;
+    padding: 5px;
+}
+
+.heading-notes .btn {
+    position: relative;
+    bottom: 30px;
+    right: -480px;
+}
+
+.calendar-header .btn {
+    position: relative;
+    bottom: 35px;
+    left: 100px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+
+/*The new position of the side bar (when closed)*/
+
+.reduce {
+    transition: 1s ease;
+    width: 30px;
+    padding-right: 20px;
+    transition: all 1s ease;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------------*/
+
+
+/*The arrow to open and close the side bar*/
+
+.expand {
+    color: #fff;
+    font-size: 20px;
+    background-color: #3d3d3d;
+    border: solid 1px #fff;
+    border-radius: 50%;
+    padding: 8px 5px;
+    height: 30px;
+    width: 30px;
+}
+
+.expand:hover {
+    cursor: pointer;
+    transition: 1s;
+    background-color: #454545;
+}
+
+.expand i {
+    font-size: 20px;
+    position: relative;
+    bottom: 4px;
+    color: #fff;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------------*/
+
+
+/*The position of the arrow with respect to the side bar*/
+
+.default-position {
+    transition: 1s ease;
+    position: absolute;
+    top: 25px;
+    left: 180px;
+}
+
+.new-position {
+    position: absolute;
+    transition: 1s ease;
+    top: 25px;
+    left: 60px;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------------*/
+
+
+/*User Info  Div*/
+
+.user-info {
+    margin-top: 60px;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.user-info img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-left: 8px;
+}
+
+.user-info h1 {
+    margin-left: 20px;
+    font-size: 15px;
+    color: #fff;
+    position: relative;
+    bottom: 10px;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------------*/
+
+
+/*The box containing the icon and the content*/
+
+.box-around {
+    width: 80%;
+    height: 25px;
+    border-radius: 7px;
+    padding-right: 10px;
+    border: none;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+}
+
+.box-around:hover {
+    cursor: pointer;
+    background-color: #3d3d3d;
+}
+
+.box-around i {
+    font-size: 20px;
+    position: relative;
+    top: 5px;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.box-around h1 {
+    font-size: 15px;
+    color: #fff;
+    position: relative;
+    left: 30px;
+    bottom: 35px;
+    margin-left: 20px;
+    width: 80px;
+}
+
+.content-invisible {
+    transition: 0.5s ease;
+    opacity: 0;
+}
+
+.content-visible {
+    transition: 4s ease;
+    opacity: 1;
+}
+
+
+/*-------------------------------------------------------------------------------------------------*/
+
+
+/* Default styles for main content */
+
+.main-section {
+    position: absolute;
+    top: -1%;
+    background-color: #262626;
+    border-radius: 20px;
+    margin-top: 28px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    transition: all 1s ease;
+}
+
+.default-main-section {
+    transition: all 1s ease;
+    margin-left: 220px;
+}
+
+.reduced-main-section {
+    transition: all 1s ease;
+    margin-left: 100px;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------------*/
+
+.contents-container {
+    border-radius: 13px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #3d3d3d;
+    color: #fff;
+}
+
+.contents-container h1 {
+    margin-top: 0;
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------------*/
+
+.notes-container {
+    min-width: 60%;
+}
+
+.new-notes {
+    margin-top: 20px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.new-note {
+    height: 100px;
+    width: 20%;
+    border-radius: 12px;
+    background-color: #262626;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.new-note h1 {
+    font-size: 13px;
+    position: relative;
+    top: 40px;
+    text-align: center;
+}
+
+.new-note:hover {
+    cursor: pointer;
+}
+
+.new-notes button {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: none;
+    font-size: 20px;
+    padding: 5px;
+    position: relative;
+    top: 30px;
+    left: 41px;
+    background-color: #034889;
+    color: #fff;
+}
+
+.new-notes button:hover {
+    cursor: pointer;
+    box-shadow: 3px 3px 2px #000;
+}
+
+.new-note a {
+    color: #fff;
+}
+
+.new-note:hover {
+    box-shadow: 3px 3px 2px #000;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------------*/
+
+.sticky-notes {
+    min-width: 27%;
+    height: 270px;
+}
+
+.sticky-notes .text {
+    height: 200px;
+    color: black;
+    padding: 10px 20px;
+    overflow: hidden;
+}
+
+.heading textarea {
+    width: 240px;
+    height: 200px;
+    font-size: 16px;
+    resize: none;
+    border: none;
+    padding: 5px 10px;
+    background-color: transparent;
+    position: relative;
+    right: 30px;
+    color: #fff;
+}
+
+.heading textarea:focus {
+    outline: none;
+}
+
+.size-expand {
+    width: 260px;
+}
+
+.heading textarea::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+.heading textarea::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------------*/
+
+.todo-list-container {
+    min-width: 25%;
+    height: 270px;
+    overflow: hidden;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------------*/
+
+.calendar-container {
+    width: 280px;
+    border-radius: 10px;
+    padding: 10px;
+    padding-right: 20px;
+    height: 290px;
+}
+
+.calendar-header {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.month {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.weekday {
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.calendar-dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.date {
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border-radius: 80%;
+}
+
+.date:hover {
+    background-color: #262626;
+}
+
+.date.empty {
+    visibility: hidden;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------------*/
+
+.trash-bin {
+    min-width: 270px;
+    position: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.trash-bin-button {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: red;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-left: 110px;
+    margin-bottom: 50px;
+}
+
+.trash-bin-button:hover {
+    box-shadow: 3px 3px 2px #000;
+}
+
+.trash-bin-button a {
+    color: #fff;
+}
+
+@media screen and (max-width: 1000px) {
+    .reduced-main-section {
+        margin-left: 50px;
+        padding-left: 10px;
+    }
+    .default-main-section {
+        margin-left: 50px;
+        padding-left: 10px;
+    }
+    .heading-notes .btn {
+        position: relative;
+        bottom: 30px;
+        left: 190px;
+    }
+    .notes-container {
+        min-width: 260px;
+        padding-right: 0px;
+    }
+    .main-section {
+        margin-left: 10px;
+        width: 90%;
+        z-index: -1;
+    }
+    .sticky-notes {
+        max-width: 260px;
+    }
+    .todo-list-container {
+        min-width: 260px;
+    }
+    .calendar-container {
+        max-width: 270px;
+    }
+    .new-notes {
+        padding-right: 10px;
+        padding-left: 0px;
+        max-width: 270px;
+    }
+    .new-note {
+        margin-left: 10px;
+    }
+    .trash-bin {
+        min-width: 260px;
+    }
+    .side-bar {
+        opacity: 1;
+    }
+    .default-position {
+        position: absolute;
+        top: 10px;
+        left: 30px;
+        z-index: 1;
+        transition: all 0.5s ease;
+    }
+    .mobile-width {
+        position: absolute;
+        left: -200px;
+        z-index: 1;
+        transition: all 1s ease;
+    }
+    .reduce {
+        position: absolute;
+        left: 0;
+        transition: all 1s ease;
+        width: 150px;
+        height: 95vh;
+        transition: 1s ease;
+        padding: 5px 20px 0px 10px;
+        margin: 0;
+        z-index: 1;
+        border-radius: 20px;
+        margin: 20px;
+    }
+    .content-invisible {
+        transition: 4s ease;
+        opacity: 1;
+    }
+    .content-visible {
+        transition: 0.5s ease;
+        opacity: 0;
+    }
+    .new-position {
+        position: absolute;
+        top: 10px;
+        left: 180px;
+        z-index: 2;
+        transition: all 0.5s ease;
+    }
+    .new-note {
+        width: 120px;
+    }
+    .save-btn {
+        height: 30px;
+        width: 30px;
+        background-color: rgb(159, 234, 30);
+        position: relative;
+        bottom: 60px;
+        left: 135px;
+        padding: 5px;
+    }
+    .save-btn a {
+        font-size: 18px;
+        position: relative;
+        top: 0px;
+    }
+    .main-section {
+        padding-right: 20px;
+    }
+    .heading textarea {
+        position: relative;
+        bottom: 40px;
+        left: 1px;
+    }
+    .calendar-container {
+        height: 320px;
+    }
+}
+
+.btn::after {
+    content: "Edit";
+    height: 40px;
+    width: 100px;
+    color: #fff;
+    background-color: #000;
+    padding: 5px 10px;
+    font-size: 11px;
+    border-radius: 12px;
+    position: relative;
+    bottom: 50px;
+    right: 6px;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    z-index: 1;
+}
+
+.add-btn:after {
+    content: "Edit";
+}
+
+.delete-btn:after {
+    content: "Delete";
+}
+
+.save-btn::after {
+    content: "Save";
+}
+
+.save-btn:hover::after {
+    opacity: 1;
+}
+
+.delete-btn:hover::after {
+    opacity: 1;
+}
+
+.add-btn:hover::after {
+    opacity: 1;
+}
+
+.new-note button:after {
+    content: "Add";
+    height: 40px;
+    width: 100px;
+    color: #fff;
+    background-color: #000;
+    padding: 10px;
+    font-size: 13px;
+    border-radius: 12px;
+    position: relative;
+    bottom: 70px;
+    right: 6px;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    z-index: 1;
+}
+
+.new-note button:hover::after {
+    opacity: 1;
+}
+
+.new-note button {
+    padding-top: 10px;
+}
+
+.trash-bin-button:after {
+    content: "TrashBin";
+    height: 40px;
+    width: 100px;
+    color: #fff;
+    background-color: #000;
+    padding: 10px;
+    font-size: 13px;
+    border-radius: 12px;
+    position: relative;
+    bottom: 94px;
+    right: 17px;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    z-index: 1;
+}
+
+.trash-bin-button:hover::after {
+    opacity: 1;
+}
+
+.trash-bin-button {
+    padding-top: 15px;
+}
